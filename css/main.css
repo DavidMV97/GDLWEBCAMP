@@ -268,3 +268,90 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+
+/** Header **/
+
+.hero {
+    background-image: url(../img/encabezado.jpg);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+}
+
+.contenido-header {
+    padding-top: 40px;
+}
+
+@media only screen and(min-width:768px) {
+    .contenido-header {
+        padding-top: 10px;
+    }
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks a {
+    color: white;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+.social-networks a:last-child {
+    margin-right: 0;
+}
+
+.event-information {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+}
+
+@media only screen and(min-width:768px) {
+    .event-information {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+
+.event-information p {
+    margin: 0;
+    display: inline;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.event-information p i {
+    color: #fe4918;
+}
+
+.container-site-name {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+
+/* p.date {
+    float: right;
+    text-align: right;
+} */

@@ -279,6 +279,7 @@ html {
     box-sizing: inherit;
 }
 
+/* Globales */
 body {
     background-color: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
@@ -286,6 +287,27 @@ body {
 
 h2 {
     font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    width: 98%;
+    margin: 0 auto;
+}
+
+@media only screen and ( min-width: 480px ){
+    .container{
+        width: 95%;
+    }
+}
+@media only screen and ( min-width: 480px ){
+    .container{
+        width: 95%;
+    }
+}
+@media only screen and ( min-width: 992px ){
+    .container{
+        width: 98%;
+    }
 }
 
 
@@ -377,4 +399,82 @@ h1 {
         margin: 0;
         line-height: 1;
     }
+}
+
+.bar{
+    background-color: #353535;
+    padding: 20px 0;
+}
+
+
+.logo img{
+    width: 100%;
+}
+
+@media only screen and(min-width:768px) {
+    .logo{
+        width: 33%;
+    }
+}
+
+/* Navegacion principal */
+.main-navigation {
+    display: none;
+}
+.main-navigation a {
+    font-family: 'Oswald' , sans-serif;
+    color: #ffff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 15px;
+    font-weight: bold;
+}
+.main-navigation a:last-child{
+    border: 2px solid #fe4918;
+    color: #fe4918;
+}
+.main-navigation a:last-child:hover{
+    color: white;
+}
+
+.main-navigation a:hover{
+    background-color: #fe4918;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-navigation{
+        display: flex;
+        align-items: center;
+    }
+    .main-navigation a {
+        margin-right: 10px;
+    }
+}
+
+.bar .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-movil{
+    width: 60px;
+    display: block;
+    float: right;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+@media only screen and ( min-width: 768px ){
+    .menu-movil{
+        display: none;
+    }
+}
+
+.menu-movil span{
+    height: 8px;
+    margin-bottom: 6px;
+    background-color: #ffff;
+    display: block;
 }
